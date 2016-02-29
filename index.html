@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <title>企业网站首页</title>
+    <!----css文件说明在css文件夹中查看-->
+    <link rel="stylesheet" type="text/css" href="./css/base.css">
+    <link rel="stylesheet" type="text/css" href="./css/common.css">
+    <link rel="stylesheet" type="text/css" href="./css/index_style.css" />
+    <link rel="stylesheet" type="text/css" media="screen and (max-width:480px)" href="./css/screenW480_style.css" />
+    <link rel="stylesheet" type="text/css" href="./css/pictureBy.css" />
+    <script type="text/javascript" src="./js/pictureBy.js"></script>
+    <!--图片轮播区域js脚本-->
+</head>
+
+<body>
+    <div class="top">
+        <div>
+            <ul>
+                <li><a href="#">联系我们</a></li>
+                <li><a href="#">加入收藏</a></li>
+                <li><a href="#">设为首页</a></li>
+            </ul>
+        </div>
+    </div>
+    <!--头部结束标签-->
+    <div class="wrapper">
+        <div class="logo">
+            <!--logo区标签-->
+            <div class="logo_left"><img src="./images/logo.jpg" alt="" /></div>
+            <div class="logo_right"><img src="./images/tel.jpg" alt="" />24小时服务热线:<span>123-456-7890</span></div>
+        </div>
+        <div class="nav">
+            <!--导航栏区标签-->
+            <div class="nav_left"></div>
+            <div class="nav_middle">
+                <div class="nav_middle_left">
+                    <ul>
+                        <li><a href="index.html">首页</a></li>
+                        <li><a href="">关于创明</a></li>
+                        <li><a href="./newsList.html">新闻动态</a></li>
+                        <li><a href="">教程中心</a></li>
+                        <li><a href="">优惠家具</a></li>
+                        <li><a href="">人才招聘</a></li>
+                    </ul>
+                </div>
+                <div class="nav_middle_right">
+                    <form>
+                        <input type="text" name="id" placeholder="search" />
+                        <button type="button"><img src="./images/search.png" alt="" />
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="nav_right">
+            </div>
+        </div>
+        <div id="contain">
+            <!--轮播图区标签-->
+            <div id="list" style="left:-1000px">
+                <img src="./images/ad4.jpg" alt="5">
+                <img src="./images/ad2.jpg" alt="1">
+                <img src="./images/ad3.jpg" alt="2">
+                <img src="./images/ad4.jpg" alt="4">
+                <img src="./images/ad2.jpg" alt="1">
+            </div>
+            <div id="buttons">
+                <span index="1" class="on"></span>
+                <span index="2"></span>
+                <span index="3"></span>
+            </div>
+            <a id="prev" href="javascript:;" class="arrow">&lt;</a>
+            <a id="next" href="javascript:;" class="arrow">&gt;</a>
+        </div>
+        <div class="main">
+            <!--主内容区标签-->
+            <div class="news">
+                <div class="title">
+                    <h2>新闻中心</h2><span><a href="./newsList.html">more&gt;&gt;</a></span>
+                </div>
+                <div class="pic_news">
+                    <img src="./images/news.jpg" alt="" style="width: 113px;height: 77px;" />
+                    <h2>11.11 家居家装节</h2>
+                    <p>活动时间：11月11日—11月15日
+                        <br /> 地点：宁波国际会展中心
+                        <!-- <br /> <a href="">Learn More &gt;&gt;</a> -->
+                    </p>
+                </div>
+                <div class="news_list">
+                    <ul>
+                        <li><span>2014-06-01</span><a href="newsBox.html">用歌声唱响未来 用诗歌传递梦想</a></li>
+                        <li><span>2014-06-01</span><a href="">东莞这家企业要火，投10亿只是太任性？</a></li>
+                        <li><span>2014-06-01</span><a href="">伊百丽喜获“经销商推崇品牌”荣誉</a></li>
+                        <li><span>2014-06-01</span><a href="">热烈祝贺伊百丽荣获2015年"衣柜十大品牌"</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="products">
+                <div class="title">
+                    <h2>教程中心</h2><span><a href="">more&gt;&gt;</a></span>
+                </div>
+                <div class="pic_news">
+                    <img src="./images/css.jpg" alt="" style="width: 156px; height:106px;" />
+                    <h2>智能家居发展历史</h2>
+                    <p>自从世界上第一幢智能建筑1984年在美国出现后，美国、加拿大、欧洲、澳大利亚和东南亚等经济比较发达的国家先后提出了各种智能家居的方案。
+                    </p>
+                </div>
+                <div class="product_type">
+                    <ul>
+                        <li><a href="./php01.html">玉石家具</a></li>
+                        <li><a href="">板式</a></li>
+                        <li><a href="">竹编家具</a></li>
+                        <li><a href="">金属家具</a></li>
+                    </ul>
+                    <form class="product_input">
+                        <select name="select_input">
+                            <option value="volvo">玉石家具</option>
+                            <option value="saab">板式</option>
+                            <option value="fiat">竹编家具</option>
+                            <option value="audi">金属家具</option>
+                        </select>
+                    </form>
+                </div>
+            </div>
+            <div class="sidebar">
+                <!--版权区标签-->
+                <div class="title">
+                    <h2>媒体聚焦</h2><span><a href="">more&gt;&gt;</a></span>
+                </div>
+                <embed src="http://player.youku.com/player.php/sid/XNjkzMDE5MTUy/v.swf" controls="controls" />
+                <img src="./images/app.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <div>
+            <div>
+                <ul>
+                    <li>
+                        <h2>关于</h2></li>
+                    <li>品牌故事</li>
+                    <li>联系我们</li>
+                    <li>加入我们</li>
+                    <li>版权声明</li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li>
+                        <h2>教程中心</h2></li>
+                    <li>玉石家具</li>
+                    <li>板式</li>
+                    <li>竹编家具</li>
+                    <li>金属家具</li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li>
+                        <h2>关注</h2></li>
+                    <li>新浪微博</li>
+                    <li>腾讯微博</li>
+                    <li>企业微信</li>
+                    <li>QQ空间</li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li>
+                        <h2>留言</h2></li>
+                    <li>意见反馈</li>
+                    <li>问题留言</li>
+                    <li>媒体联络</li>
+                    <li>在线客服</li>
+                </ul>
+            </div>
+            <div class="code">
+                <h2>微信关注</h2>
+                <img src="./images/qrcode.jpg" alt="" />
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+    var cI = window.innerWidth;
+    var cC = document.body.clientWidth;
+    console.log(cI)
+    console.log(cC)
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,96 @@
+#contain {
+    position: relative;
+                                     
+                                         max-width: 1000px;/*防止溢出*/
+    height: 310px;
+    overflow: hidden;
+    z-index: 997;
+    border-radius: 3px;
+   
+}
+
+
+/* 绝对定位，其中的left参数通过js改变，从而实现图片的切换 */
+
+#list {
+    position: absolute;
+    width: 5000px;
+    height: 310px;
+    z-index: 1;
+}
+
+
+/* 浮动图片，使其变成横的一排，必须修改list的宽度才能实现 */
+
+#list img {
+    float: left;
+}
+
+
+/* 修改处top值 表示的是快进键位的位置，最好是通过js自动获取给出 */
+
+.arrow {
+    display: none;
+    width: 40px;
+    height: 40px;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 40px;
+    color: #fff;
+    position: absolute;
+    z-index: 2;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, .3);
+    text-decoration: none;
+    top: 155px;
+}
+
+
+/* 左右箭头样式 */
+
+#contain:hover .arrow {
+    display: block;
+}
+
+.arrow:hover {
+    background-color: rgba(0, 0, 0, .7);
+}
+
+#prev {
+    left: 30px;
+}
+
+#next {
+    right: 30px;
+}
+
+
+/* 按钮样式部分 */
+
+#buttons {
+    position: absolute;
+    left: 43%;
+    bottom: 10px;
+    width: 110px;
+    height: 20px;
+    z-index: 2;
+}
+
+#buttons span {
+    cursor: pointer;
+    float: left;
+    display: block;
+    width: 10px;
+    height: 10px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    background: #333;
+    margin-left: 10px;
+}
+
+#buttons .on {
+    background-color: orangered;
+}
+
+

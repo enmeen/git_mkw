@@ -1,0 +1,135 @@
+/*在屏幕大于480px下应用 */
+
+.newsList_img {
+    display: none;
+}
+
+div.newsList_wrapper {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.newsList_nav, #newsList_content {
+    float: left;
+}
+
+.newsList_nav {
+    width: 24%;
+    background-color: #F6F6F6;
+}
+
+.newsList_nav h2 {
+    border-bottom: 2px solid #e8e8e8;
+    height: 35px;
+    line-height: 1.5em;
+    color: #786f66;
+    font-family: "微软雅黑";
+    text-align: center;
+    font-size: 2em;
+}
+
+#newsList_content {
+    width: 75%;
+    height: 410px;
+    overflow: hidden;
+}
+
+.newsList_nav ul {
+    list-style: none;
+    overflow: hidden;
+}
+
+.newsList_nav ul li {
+    width: 100%;
+    height: 3em;
+    line-height: 3em;
+    border-bottom: 1px solid #E8E8E8;
+    padding-left: 9em;
+}
+
+.newsList_nav ul li a {
+    display: block;
+    font-size: 1.6em;
+    background: url(../images/li_bg.gif) no-repeat left center;
+    padding-left: 1em;
+}
+
+.newsList_nav ul li a:link, .newsList_nav ul li a:visited {
+    text-decoration: none;
+    color: #000;
+}
+
+.newsList_nav ul li a:hover, .newsList_nav ul li a:active {
+    color: #BF0815;
+}
+
+.newsList_wrapper .newsList_head {
+    width: 75%;
+    height: 35px;
+    line-height: 30px;
+    font-size: 1.9em;
+    color: #7E7E7E;
+    border-bottom: 3px solid #A70808;
+    padding-left: 10%;
+    text-indent: 2em;
+}
+
+
+/***************************************  pagination **********************************************************/
+
+.pagination {
+    clear: both;
+    width: 36%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.pagination a {
+    display: inline-block;
+    text-decoration: none;
+    width: 7.1865832%;
+    height: 2.5em;
+    border: 1px solid #E8E8E8;
+    margin: 2.05338809%;
+    text-align: center;
+    line-height: 2.5em;
+}
+
+.pagination a:link, .pagination a:visited {
+    text-decoration: none;
+    color: #000;
+}
+
+.pagination a:hover, .pagination a:active {
+    background: #BF0815;
+    color: #ffffff;
+}
+
+
+/***********************************480px下导航区样式  */
+
+@media screen and (max-width:480px) {
+    .newsList_nav {
+        width: 100%;
+    }
+    .newsList_nav ul li {
+        display:inline-block;
+        width: 45%;
+        text-align: center;
+      
+
+        height: 3em;
+        line-height: 3em;
+        border:none;
+        padding-left: 0;  
+    }
+    .newsList_nav ul li a {
+        display: block;
+        font-size: 1.5em;
+        padding: 0;
+        border-radius: 40%;r
+    }
+    .newsList_nav h2 {
+        display: none;
+    }
+}

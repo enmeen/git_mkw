@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <title>php开发01</title>
+    <!----css文件说明在css文件夹中查看-->
+    <link rel="stylesheet" type="text/css" href="./css/base.css">
+    <link rel="stylesheet" type="text/css" href="./css/common.css">
+    <link rel="stylesheet" type="text/css" href="./css/index_style.css" />
+    <link rel="stylesheet" type="text/css" media="screen and (max-width:480px)" href="./css/screenW480_style.css" />
+    <style type="text/css">
+    img {
+        max-width: 100%;
+    }
+    
+    .pCenter {
+        text-align: center;
+    }
+    
+    .pCenter img {
+        width: 300;
+        height: 100%;
+    }
+    
+    .bread_nav {
+        margin-top: 10px;
+        font-size: 1.3em;
+    }
+    
+    .bread_nav a {
+        margin-left: 3px;
+        margin-right: 3px;
+    }
+    
+    @media screen and (min-width: 481px) {
+        .newsBox {
+            width: 73.9645%;
+            /* 1000/1352 */
+            /* min-height: 300px;
+        _height: 300px; */
+            margin: 0 auto;
+        }
+        .newsImg {
+            width: 1000px;
+            height: 310px;
+            margin:10px auto;
+        }
+        .newsImg img{
+            width: 1000px;
+            height: 310px;
+        }
+        .newsTitle {
+            width: 100%;
+            font-size: 1.6667em;
+            font-family: "微软雅黑";
+            text-align: center;
+            margin: 10px 0;
+        }
+        .newsInfo {
+            color: #666;
+            text-align: center;
+            border-bottom: 1px dotted #666;
+        }
+        .newsContent {
+            font-size: 1.166667em;
+            line-height: 25px;
+            padding: 20px;
+            text-indent: 2em;
+        }
+    }
+    
+    @media screen and (max-width: 480px) {
+        .newsBox {
+           
+            /* 770/1352 */
+           
+            margin: 0 auto;
+        }
+         .newsImg {
+            width: 100%;
+            height: 310px;
+            margin:10px auto;
+        }
+        .newsImg img{
+
+            max-width: 100%;
+            height: 310px;
+        }
+        .newsTitle {
+            font-size: 1.6667em;
+            font-family: "微软雅黑";
+            text-align: center;
+            margin: 10px 0;
+        }
+        .newsInfo {
+            color: #666;
+            text-align: center;
+            border-bottom: 1px dotted #666;
+        }
+        .newsContent {
+            font-size: 1.166667em;
+            line-height: 25px;
+            padding: 20px;
+            text-indent: 2em;
+        }
+    }
+    </style>
+</head>
+
+<body>
+    <div class="top">
+        <div>
+            <ul>
+                <li><a href="#">联系我们</a></li>
+                <li><a href="#">加入收藏</a></li>
+                <li><a href="#">设为首页</a></li>
+            </ul>
+        </div>
+    </div>
+    <!--头部结束标签-->
+    <div class="wrapper">
+        <div class="logo">
+            <!--logo区标签-->
+            <div class="logo_left"><img src="./images/logo.jpg" alt="" /></div>
+            <div class="logo_right"><img src="./images/tel.jpg" alt="" />24小时服务热线:<span>123-456-7890</span></div>
+        </div>
+        <div class="nav">
+            <!--导航栏区标签-->
+            <div class="nav_left"></div>
+            <div class="nav_middle">
+                <div class="nav_middle_left">
+                    <ul>
+                        <li><a href="">首页</a></li>
+                        <li><a href="">关于慕课</a></li>
+                        <li><a href="">新闻动态</a></li>
+                        <li><a href="">课程中心</a></li>
+                        <li><a href="">在线课程</a></li>
+                        <li><a href="">人才招聘</a></li>
+                    </ul>
+                </div>
+                <div class="nav_middle_right">
+                    <form>
+                        <input type="text" name="id" placeholder="search" />
+                        <button type="button"><img src="./images/search.png" alt="" />
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="nav_right">
+            </div>
+        </div>
+        <!-- <div class="newsBox"> -->
+        <div class="newsImg"><img src="./images/php/php_banner.jpg" /></div>
+        <div class="bread_nav newsBox"><a href="企业网站首页.html">首页</a>&gt;<a href="">php开发</a></div>
+        <h1 class="newsTitle newsBox">php开发教程</h1>
+        <p class="newsInfo newsBox">发布人：Admin 发布时间：2014-08-01 浏览：5321次</p>
+        <div class="newsContent newsBox">
+            <p> <b>什么是php</b> </p>
+            <p>PHP是一种服务器端HTML-嵌入式脚本描述语言。 其最强大和最重要的特征是其数据库集成层,使用它完成一个含有数据库功能的网页是不可置信的简单。在HTML文件中, PHP脚本程序(语法类似于Perl或者c语言)可以使用特别的PHP标签进行引用, 这样网页制作者也不必完全依赖HTML生成网页了。由于PHP是在服务器端执行的, 客户端是看不到PHP代码的。 PHP可以完成任何CGI脚本可以完成的任务,但它的功能的发挥取决于它和各种数据库的兼容性。 PHP除了可以使用HTTP进行通信,也可以使用IMAP, SNMP, NNTP, POP3协议</p>
+            <p> <b>php开发需要什么</b> </p>
+            <p>App Store因公平著称，能被其推荐是每一款App梦寐以求的荣誉，慕课网则一举占据了其四个榜单，包括精品推荐首页“合集”版块下“免费App精选”中的“新品”推荐、“合集”版块“致毕业生”中“学无止境”推荐、教育类别“合集”版块下“学而不倦”中的推荐以及“轻松学编程”版块推荐。 </p>
+            <div class="pCenter"><img src="./images/php/php01.jpg" alt="" /></div>
+            <p>事实上，慕课网登上App Store榜单并非首次。早在2014年5月，慕课网就荣登App Store 精品推荐榜首，同时登上“教育”类别下“优秀新App”榜首，并获评“五月最佳”精彩App。随后，慕课网App接连出现在“致毕业生”、“免费App精选”、“夏日学堂”等榜单中。</p>
+            <p> 从App Store的持续推荐以及“优秀”、“精选”的肯定中不难看出，慕课网在IT在线学习领域以及教育类App中得到了用户的认可。 </p>
+            <p><b>新功能上线 持续提升用户体验</b> </p>
+            <p>一款好的产品同样需要不断改进来满足用户需求。慕课网App上线至今进行了多个版本的迭代，不断完善产品、提升用户体验，ios最新的2.1.0版本于7月20日更新，上线了大量新功能。</p>
+            <p> 明确、清晰的课程分类能够让用户迅速找到感兴趣的课程，本次慕课网就上线了全新的课程分类方式，点击“全部课程”即可显示出全部的技术语言种类以及视频课程数量，全部在线课程一目了然。 </p>
+            <p>不知道讲师在哪里？此版本更新中添加了讲师认证，不仅对讲师空间进行了认证，在课程讨论和笔记中，通过认证标识，一眼可以看到哪个是讲师回复。 </p>
+            <p>此外，慕课网App在最新版本中调整了下拉刷新和上拉加载的效果；课程练习部分增加了习题解析；对半透化效果、全屏播放器按钮进行了优化，并新增了编程课、ps课程。一系列的改进相信能为IT学习用户带来更好的学习体验。</p>
+            <p> 慕课网App在精品视频课程的基础上，不断优化用户体验，帮助IT学习者迅速入门、提升技能，以优秀的产品基因获得App Store的多个推荐，使更多用户有机会使用这款IT学习软件，体验学习的简单和快捷。</p>
+        </div>
+        <!-- </div> -->
+    </div>
+    <div class="copyright">
+        <div>
+            <div>
+                <ul>
+                    <li>
+                        <h2>关于</h2></li>
+                    <li>品牌故事</li>
+                    <li>联系我们</li>
+                    <li>加入我们</li>
+                    <li>版权声明</li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li>
+                        <h2>课程</h2></li>
+                    <li>PHP开发</li>
+                    <li>前端开发</li>
+                    <li>JAVA开发</li>
+                    <li>Android开发</li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li>
+                        <h2>关注</h2></li>
+                    <li>新浪微博</li>
+                    <li>腾讯微博</li>
+                    <li>企业微信</li>
+                    <li>QQ空间</li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li>
+                        <h2>留言</h2></li>
+                    <li>意见反馈</li>
+                    <li>问题留言</li>
+                    <li>媒体联络</li>
+                    <li>在线客服</li>
+                </ul>
+            </div>
+            <div class="code">
+                <div><img src="./images/weixin.png" alt="" />
+                    <h2>微信关注</h2></div>
+                <img src="./images/qrcode.jpg" alt="" />
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

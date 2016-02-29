@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>newsList</title>
+    <link rel="stylesheet" type="text/css" href="./css/base.css">
+    <link rel="stylesheet" type="text/css" href="./css/common.css">
+    <link rel="stylesheet" type="text/css" href="./css/newsList_style.css">
+    <link rel="stylesheet" type="text/css" media="screen and (max-width:480px)" href="./css/screenW480_style.css" />
+    <!--尺寸小于480px应用样式表-->
+    <link rel="stylesheet" type="text/css" href="./css/pictureBy.css" />
+    <!--轮播图片样式-->
+    <script type="text/javascript" src="./js/pictureBy.js"></script>
+    <!--图片轮播区域js脚本-->
+</head>
+
+<body>
+    <div class="top">
+        <div>
+            <ul>
+                <li><a href="#">联系我们</a></li>
+                <li><a href="#">加入收藏</a></li>
+                <li><a href="#">设为首页</a></li>
+            </ul>
+        </div>
+    </div>
+    <!--头部结束标签-->
+    <div class="wrapper">
+        <div class="logo">
+            <!--logo区标签-->
+            <div class="logo_left"><img src="./images/logo.jpg" alt="" /></div>
+            <div class="logo_right"><img src="./images/tel.jpg" alt="" />24小时服务热线:<span>123-456-7890</span></div>
+        </div>
+        <div class="nav">
+            <!--导航栏区标签-->
+            <div class="nav_left"></div>
+            <div class="nav_middle">
+                <div class="nav_middle_left">
+                    <ul>
+                        <li><a href="./index.html">首页</a></li>
+                        <li><a href="">关于创明</a></li>
+                        <li><a href="./newsList.html">新闻动态</a></li>
+                        <li><a href="">教程中心</a></li>
+                        <li><a href="">优惠家具</a></li>
+                        <li><a href="">人才招聘</a></li>
+                    </ul>
+                </div>
+                <div class="nav_middle_right">
+                    <form>
+                        <input type="text" name="id" placeholder="search" />
+                        <button type="button"><img src="./images/search.png" alt="" />
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="nav_right">
+            </div>
+        </div>
+        <div id="contain">
+            <!--轮播图区标签-->
+            <div id="list" style="left:-1000px">
+                <img src="./images/ad4.jpg" alt="5">
+                <img src="./images/ad2.jpg" alt="1">
+                <img src="./images/ad3.jpg" alt="2">
+                <img src="./images/ad4.jpg" alt="4">
+                <img src="./images/ad2.jpg" alt="1">
+            </div>
+            <div id="buttons">
+                <span index="1" class="on"></span>
+                <span index="2"></span>
+                <span index="3"></span>
+            </div>
+            <a id="prev" href="javascript:;" class="arrow">&lt;</a>
+            <a id="next" href="javascript:;" class="arrow">&gt;</a>
+        </div>
+        <!--小屏幕显示此-->
+        <div class="newsList_img">
+            <a href=""><img src="./images/ad.jpg" alt="ad" /></a>
+        </div>
+        <!--热点新闻图-->
+        <div class="newsList_wrapper">
+            <div class="newsList_nav">
+                <h2>新闻中心</h2>
+                <ul id="tab">
+                    <li><a href="newsList_iframe.html" target="newsList_content">公司新闻</a></li>
+                    <li><a href="javascript:void(0)" target="newsList_content">行业新闻</a></li>
+                    <li><a href="javascript:void(0)" target="newsList_content">媒体报道</a></li>
+                    <li><a href="javascript:void(0)" target="newsList_content">活动专区</a></li>
+                    <li><a href="javascript:void(0)" target="newsList_content">精彩视频</a></li>
+                    <li><a href="javascript:void(0)" target="newsList_content">资源下载</a></li>
+                    <li><a href="javascript:void(0)" target="newsList_content">公司内刊</a></li>
+                </ul>
+            </div>
+            <div class="newsList_head">新闻中心</div>
+            <iframe src="newsList_iframe.html" id="newsList_content" name="newsList_content" frameborder="0" scrolling="no"></iframe>
+        </div>
+    </div>
+    <div class="copyright">
+        <div>
+            <div>
+                <ul>
+                    <li>
+                        <h2>关于</h2></li>
+                    <li>品牌故事</li>
+                    <li>联系我们</li>
+                    <li>加入我们</li>
+                    <li>版权声明</li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li>
+                        <h2>教程中心</h2></li>
+                    <li>玉石家具</li>
+                    <li>板式</li>
+                    <li>竹编家具</li>
+                    <li>金属家具</li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li>
+                        <h2>关注</h2></li>
+                    <li>新浪微博</li>
+                    <li>腾讯微博</li>
+                    <li>企业微信</li>
+                    <li>QQ空间</li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li>
+                        <h2>留言</h2></li>
+                    <li>意见反馈</li>
+                    <li>问题留言</li>
+                    <li>媒体联络</li>
+                    <li>在线客服</li>
+                </ul>
+            </div>
+            <div class="code">
+                <h2>微信关注</h2>
+                <img src="./images/qrcode.jpg" alt="" />
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

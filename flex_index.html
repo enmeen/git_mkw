@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>flex_index</title>
+    <link rel="stylesheet" type="text/css" href="./css/base.css" />
+    <style type="text/css">
+    .box {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .header {
+        display: flex;
+        flex-direction: column;
+        height: 150px;
+    }
+    
+    .header_1 {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        height: 26px;
+        background: #F5F5F5;
+        border-bottom: 1px solid #e8e8e8;
+    }
+    
+    .header_1 a:link,
+    .header_1 a:visited {
+        text-decoration: none;
+        color: gray;
+    }
+    
+    .header_1 a:hover,
+    .header_1 a:active {
+        text-decoration: none;
+        color: red;
+    }
+    
+    .header_1 li {
+        display: inline-block;
+        width: 70px;
+        background: url(./images/li_bg.gif) no-repeat center left;
+        padding-left: 10px;
+    }
+    
+    .header_2 {
+        display: flex;
+        justify-content: space-between;
+        height: 80px;
+    }
+    
+    .header_2 div {
+        display: flex;
+        align-items: center;
+    }
+    
+    .header_3 {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 40px;
+        background: #776E67;
+        border-radius: 5px;
+    }
+    
+    .header_3 li {
+        display: inline-block;
+        width: 100px;
+        padding-left: 50px;
+    }
+    
+    #header_3_search {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 200px;
+        height: 30px;
+        margin-right: 70px;
+        background: #fff;
+        border-radius: 5px;
+    }
+    
+    input {
+        width: 150px;
+        padding-left: 10px;
+        height: 22px;
+    }
+    
+    .main {
+        max-width: 960px;
+        /*   height: 550px; 高度自适应*/
+        margin: 0 auto;
+    }
+    
+    .main_content {
+        display: flex;
+        height: 250px;
+        justify-content: space-between;
+    }
+    
+    .products {
+        margin: 0 5px;
+    }
+    
+    .main_content>div {
+        flex: 1;
+        border: 1px solid #e8e8e8;
+    }
+    
+    .main_picby {
+        height: 310px;
+    }
+    /* *******样式通用区****************** */
+    
+    .title {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        height: 30px;
+        margin: 5px;
+    }
+    
+    .pic_news {
+        display: flex;
+    }
+    
+    .pic_news img {
+        margin: 5px;
+    }
+    
+    .pic_news h2 {
+        font-size: 1.4em;
+    }
+    
+    .pic_news p {
+        line-height: 1.8em;
+    }
+    
+    .main_content h3 {
+        color: red;
+    }
+    /* ******************************* */
+    
+    .news_list li {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        height: 25px;
+        border-bottom: 1px dotted #e8e8e8;
+        overflow: hidden;
+        background: url(./images/list.jpg) no-repeat left top;
+    }
+    
+    .news_list li a {
+        display: block;
+        width: 250px;
+        height: 16px;
+        text-overflow: ellipsis;
+        -o-text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+    
+    .news_list li span {
+        display: block;
+        width: 21%;
+        height: 16px;
+        color: #786f66;
+        ;
+    }
+    
+    .product_type {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 10px;
+    }
+    
+    .news_list,
+    .product_type {
+        margin-top: 10px;
+    }
+    
+    .embed {
+        width: 100%;
+        height: 150px;
+    }
+    
+    .footer {
+    	display: flex;
+    	justify-content:center ;
+        height: 160px;
+        background-color: #E8E8E8;
+    }
+    .footer ul{
+    	width: 13%;
+    	color: #999;
+    	background: rgba(0, 0, 0, 0) url("./images/line.png") no-repeat scroll right center;
+    	padding-top: 10px;
+    }
+    .footer ul li{
+    	height: 30px;
+    	line-height: 30px;
+    	text-align: center;
+    	font-size: 1.3em;
+    }
+    </style>
+    <link rel="stylesheet" type="text/css" href="./css/flex_pictureBy.css">
+</head>
+
+<body>
+    <div class="box">
+        <div class="header">
+            <div class="header_1">
+                <ul>
+                    <li><a href="">设为首页</a></li>
+                    <li><a href="">加入收藏</a></li>
+                    <li><a href="">联系我们</a></li>
+                </ul>
+            </div>
+            <div class="header_2">
+                <div><img src="./images/logo.jpg" /></div>
+                <div>
+                    <p class="cg"><img src="./images/search.png" />24小时服务热线:<em style="color:red">123-456-7890</em></p>
+                </div>
+            </div>
+            <div class="header_3">
+                <ul class="f16">
+                    <li><a href="">首页</a></li>
+                    <li><a href="">关于慕课</a></li>
+                    <li><a href="">新闻动态</a></li>
+                    <li><a href="">课程中心</a></li>
+                    <li><a href="">在线课程</a></li>
+                </ul>
+                <form id="header_3_search">
+                    <input type="text" placeholder="search" />
+                    <button><img src="./images/search.jpg" /></button>
+                </form>
+            </div>
+        </div>
+        <div class="main">
+            <div class="main_picby">
+                <div id="contain">
+                    <!--轮播图区标签-->
+                    <div id="list" style="left:-1000px">
+                        <img src="./images/ad4.jpg" alt="5">
+                        <img src="./images/ad2.jpg" alt="1">
+                        <img src="./images/ad3.jpg" alt="2">
+                        <img src="./images/ad4.jpg" alt="4">
+                        <img src="./images/ad2.jpg" alt="1">
+                    </div>
+                    <div id="buttons">
+                        <span index="1" class="on"></span>
+                        <span index="2"></span>
+                        <span index="3"></span>
+                    </div>
+                    <a id="prev" href="javascript:;" class="arrow">&lt;</a>
+                    <a id="next" href="javascript:;" class="arrow">&gt;</a>
+                </div>
+            </div>
+            <div class="main_content">
+                <div class="news">
+                    <div class="title">
+                        <h2>新闻中心</h2><span><a href="">more&gt;&gt;</a></span>
+                    </div>
+                    <div class="pic_news">
+                        <img src="./images/news.jpg" alt="" style="width: 113px;height: 77px;" />
+                        <div>
+                            <h3>520 慕女神喊你来表白！</h3>
+                            <p>活动时间：5月20日—5月25日
+                                <br /> 获奖公布时间：5月26日
+                                <br /> <a href="">Learn More &gt;&gt;</a>
+                            </p>
+                        </div>
+                    </div>
+                    <ul class="news_list">
+                        <li><a href="">【慕客访谈 用户篇】“有为屌丝”在路上</a><span>2014-06-01</span></li>
+                        <li><a href="">【有奖活动】给父亲的三行书信</a><span>2014-06-01</span></li>
+                        <li><a href="">《程序猿，请晒出你的童年》活动获奖公告</a><span>2014-06-01</span></li>
+                        <li><a href="">【慕课访谈】破茧成蝶——美女程序员的蜕变史22222222222222222</a><span>2014-06-01</span></li>
+                    </ul>
+                </div>
+                <div class="products">
+                    <div class="title">
+                        <h2>课程中心</h2><span><a href="">more&gt;&gt;</a></span>
+                    </div>
+                    <div class="pic_news">
+                        <img src="./images/css.jpg" alt="" style="width: 156px; height:106px;" />
+                        <div>
+                            <h3>CSS圆角进化论</h3>
+                            <p>CSS圆角的实现，经历了三大发展阶段：背景图片方式、CSS2.0+HTML标签模拟、CSS3.0圆角属性）。本案例详细讲解每一种的实现方式，并对实现的优缺点进行对比分析。
+                            </p>
+                        </div>
+                    </div>
+                    <ul class="product_type">
+                        <li><a href="">PHP开发</a></li>
+                        <li><a href="">前端开发</a></li>
+                        <li><a href="">JAVA开发</a></li>
+                        <li><a href="">Android开发</a></li>
+                    </ul>
+                </div>
+                <div class="sidebar">
+                    <!--版权区标签-->
+                    <div class="title">
+                        <h2>媒体聚焦</h2><span><a href="">more&gt;&gt;</a></span>
+                    </div>
+                    <embed class="embed" src="http://player.youku.com/player.php/sid/XNjkzMDE5MTUy/v.swf" controls="controls" />
+                    <img src="./images/app.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="footer w100">
+            <ul>
+                <li>
+                    <h2>关于</h2></li>
+                <li>品牌故事</li>
+                <li>联系我们</li>
+                <li>加入我们</li>
+                <li>版权声明</li>
+            </ul>
+            <ul>
+                <li>
+                    <h2>课程</h2></li>
+                <li>PHP开发</li>
+                <li>前端开发</li>
+                <li>JAVA开发</li>
+                <li>Android开发</li>
+            </ul>
+            <ul>
+                <li>
+                    <h2>关注</h2></li>
+                <li>新浪微博</li>
+                <li>腾讯微博</li>
+                <li>企业微信</li>
+                <li>QQ空间</li>
+            </ul>
+            <ul>
+                <li>
+                    <h2>留言</h2></li>
+                <li>意见反馈</li>
+                <li>问题留言</li>
+                <li>媒体联络</li>
+                <li>在线客服</li>
+            </ul>
+            <ul class="code">
+                <li><h2>微信关注</h2></li>
+               <li> <img src="./images/qrcode.jpg" alt="" /></li>
+            </ul>
+        </div>
+    </div>
+    <script type="text/javascript" src="./js/pictureBy.js"></script>
+</body>
+
+</html>

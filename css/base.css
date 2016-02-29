@@ -1,0 +1,46 @@
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td{
+	margin:0;
+	padding: 0;
+}
+
+body{
+	font-size: 12px;
+}
+img { 
+    border: 0;
+    max-width: 100%;
+} 
+.break{
+    display:block;
+    white-space:nowrap; overflow:hidden; text-overflow:ellipsis;
+}
+ol,ul,li{
+	list-style: none;
+}
+/* *********************************** */
+.br{
+	border: 1px solid red;
+}
+a:link, a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover, a:active {
+ 	text-decoration: none;
+    color: red;
+}
+input{
+	border:none;outline: none;
+}
+button{
+	background: #fff;
+	cursor: pointer;
+	border:none;
+}
+.f16{
+	font-size: 1.333em;
+}
+.cg{
+	color:gray;
+}

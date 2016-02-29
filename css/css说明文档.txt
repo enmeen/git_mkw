@@ -1,0 +1,7 @@
+base.css为最底层css样式重置文件，
+common.css为该网站模版化样式，各个该网站各个页面都有用到
+index_style.css为首页样式
+newsList_style.css为新闻列表样式
+pictureBy.css为图片轮播样式
+screenW480_style.css为480px下样式
+newsList_iframe_style.css为新闻列表内嵌网页样式

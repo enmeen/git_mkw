@@ -1,0 +1,126 @@
+/* 在屏幕小于480px下引用 */
+
+
+/********************************************************基础页面样式 包括导航条 logo区  */
+
+div.wrapper {
+    margin: 0;
+}
+
+.main>div {
+    height: auto;
+    border: 1px solid #e8e8e8;
+    overflow: hidden;
+}
+
+/* 在该页面宽度下，隐藏top */
+
+div.top {
+    display: none;
+}
+
+div.nav_left, div.nav_right {
+    display: none;
+}
+
+.nav_middle_right {
+    display: none;
+}
+
+div.nav_middle {
+    width: 100%;
+}
+
+div.nav_middle_left {
+    width: 100%;
+}
+
+div.nav_middle ul li {
+    width: 16.66667%;
+}
+
+div.nav_middle ul li a {
+    font-size: 1em;
+}
+
+
+/* 新闻内容页宽度调整 */
+.main{
+    width: 90%;
+}
+.main .news {
+    width: 100%
+}
+
+.main .products {
+    width: 98%;
+}
+
+.main .sidebar {
+    width: 100%;
+}
+/* 新闻列表内容区 */
+.pic_news h2 {
+    font-size: 1.1em
+}
+.products .pic_news img{
+   display: none;
+}
+.pic_news p {
+    font-size: 1em;
+    overflow: hidden;
+    
+}
+
+/**********************************下面是新闻列表页面的样式 */
+
+#contain {
+    /* 隐藏轮播图片区域 */
+    display: none;
+}
+
+.newsList_img {
+    display: block;
+}
+
+.copyright {
+    display: none;
+}
+
+.newsList_nav ul li a:link, .newsList_nav ul li a:visited {
+    text-decoration: none;
+    color: #fff;
+    background: #746B66;
+}
+
+.newsList_nav ul li a:hover, .newsList_nav ul li a:active {
+    color: #053ED8;
+    background: #fff;
+}
+
+.newsList_head {
+    display: none;
+}
+
+#newsList_content {
+    width: 100%;
+    height: 410px;
+}
+ .main .product_type .product_input {
+        
+        display: block;
+    }
+    .main .product_type .product_input select {
+        width: 150px;
+    }
+    .main .products .product_type li {
+        display: none;
+    }
+
+.main .products .product_type {
+    height: 45px;
+    margin-top: 0;
+    padding-top: 0;
+    width: 100%;
+    
+}

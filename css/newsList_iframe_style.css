@@ -1,0 +1,90 @@
+/*******************************************************大小屏幕样式通用区  */
+
+
+.newsList_iframe_content ul {
+    list-style: none;
+    overflow: hidden;
+}
+.newsList_iframe_content ul li a:link, .newsList_iframe_content ul li a:visited {
+    text-decoration: none;
+    color: #000;
+}
+
+.newsList_iframe_content ul li a:hover, .newsList_iframe_content ul li a:active {
+    color: red;
+}
+
+.newsList_iframe_content span {
+    color: gray;
+    float: right;
+    font-size: 1em;
+    line-height: 2.5em;
+}
+    #flipover a {
+        display: block;
+        width: 1em;
+        height: 1em;
+        margin: 10px;
+        text-align: center;
+        font-size: 2em;
+        border: 1px solid #e8e8e8;
+        line-height: 1em;
+        cursor: pointer;
+    }
+    #flipover a:link, #flipover a:visited {
+        text-decoration: none;
+        color: #000;
+    }
+    #flipover a:hover, #flipover a:active {
+        background-color: #BF0815;
+        color: #fff;
+    }
+/****************************宽度大于480px下样式  */
+    .newsList_iframe_content li {
+        width: 84%;
+        height: 40px;
+        font-size: 1.3em;
+        border-bottom: 1px solid #e8e8e8;
+    }
+    .newsList_iframe_content li a {
+        display: block;
+        line-height: 40px;
+        background: url(../images/list-style.png) no-repeat left center;
+        padding-left: 1em;
+    }
+    /* flipOver **/
+    #flipover {
+        position: fixed;
+        right: 9em;
+        top: 8em;
+   
+
+}
+/************************************************小屏幕样式  */
+@media screen and (max-width: 480px) {
+    .newsList_iframe_content ul span {
+        display: none;
+    }
+    .newsList_iframe_content ul li{
+    	width: 90%;
+    	display:block;
+    	height:40px;
+    	border-bottom: 1px solid #e8e8e8;
+    }
+    .newsList_iframe_content ul li a{
+    	width: 90%;
+    	display:block;white-space:nowrap; overflow:hidden; text-overflow:ellipsis;
+    	background: url(../images/list-style.png) no-repeat left center;
+    	margin-left: 1em;
+    	padding-left: 1em;
+    	font-size: 1.2em;
+    	line-height: 40px;
+    }
+     #flipover {
+        position: fixed;
+        right: 2%;
+        top: 40%;
+    }
+
+}
+

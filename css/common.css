@@ -1,0 +1,255 @@
+﻿/* 此处为组件级css类，为整个网站提供模块化组件 */
+body {
+    background: #F5F5F5;
+  overflow-x: hidden;/* 隐藏横向出现的滚动条  在css2.0版本中无法使用 css3样式 */
+}
+.tabswitch{color:#D31A08!important;}
+
+/******************************************** 基础区域样式 **********************************************************/
+div.top {
+    width: 100%;
+    height: 27px;
+    background: url(../images/top_bg.jpg);
+    background-repeat: repeat-x;
+}
+
+div.top>div {
+    width: 100%;
+    height: 27px;
+    margin: 0 auto;
+}
+
+div.top>div ul {
+    list-style-image: url(../images/li_bg.gif);
+}
+/*头部  */
+div.top>div ul li {
+    float: right;
+    width: 5%;
+    line-height: 2.25em;
+    /* 27/12 */
+}
+@media screen and (min-width:480px) and (max-width:680px){
+    div.top>div ul li{
+        width: 10%;
+    }
+}
+@media screen and (min-width:680px) and (max-width:960px){
+    div.top>div ul li{
+        width: 9%;
+    }
+}
+@media screen and (min-width:960px) and (max-width:1150px){
+    div.top>div ul li{
+        width: 8%;
+    }
+}
+
+div.top>div ul li a:link, div.top>div ul li a:visited {
+    color: #8e8e8e;
+    text-decoration: none;
+}
+
+div.top>div ul li a:hover, div.top>div ul li a:active {
+    color: red;
+}
+
+div.wrapper {
+    width: 100%;
+    /* 1000/1352 */
+    margin: 0 auto;
+}
+
+div.wrapper div.logo {
+    height: 80px;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+div.logo_left {
+    float: left;margin-left: 30px;
+}
+
+div.logo_left img {
+    max-width: 100%;
+}
+
+div.logo_right {
+    float: right;
+    line-height: 80px;
+    color: #8e8e8e;
+    padding-right: 20px;
+}
+
+div.logo_right img {
+    vertical-align: middle;
+    padding-right: 10px;
+}
+
+div.logo_right span {
+    color: red;
+    font-family: "微软雅黑";
+    font-size: 22px;
+}
+
+
+/********************************************** 导航区 *******************************************************/
+
+div.nav {
+    width: 100%;
+    height: 40px;
+}
+
+div.nav div {
+    float: left;
+    height: 40px;
+}
+
+div.nav_left {
+    background: url(../images/nav_left.jpg) right no-repeat;
+    width: 1%;
+}
+
+div.nav_middle {
+    width: 98%;
+    background: url(../images/nav_bg.jpg) repeat-x;
+}
+
+div.nav_middle_left {
+    width: 69.387755%;
+    /* 680/980 */
+}
+
+div.nav_middle_right {
+    width: 30.612245%;
+    /* 300/980 */
+}
+
+div.nav_right {
+    background: url(../images/nav_right.jpg) no-repeat left;
+    width: 1%;
+}
+
+div.nav_middle ul li {
+    float: left;
+    line-height: 40px;
+    width: 14.87%;
+    text-align: center;
+    color: #fff;
+    list-style: none;
+}
+
+div.nav_middle ul li a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #fff;
+}
+
+div.nav_middle ul li a:hover {
+    color: yellow;
+}
+
+div.nav_middle_right form {
+    position: relative;
+    /*通过相对定位，定位搜索框位置，给内部元素提供绝对定位使用*/
+    top: 5px;
+    left: 130px;
+    width: 250px;
+    /*搜索框实质的宽与高*/
+    height: 25px;
+    background-color: #FAFAFA;
+    /*搜索框整体背景颜色*/
+    border-bottom: 2px solid #ECECEC;
+    /*给form加边框，使得其有层次感*/
+    border-right: 2px solid #ECECEC;
+    border-left: 4px solid #F4F4F4;
+    border-top: 2px solid #EFEFEF;
+}
+
+
+/*隐藏*/
+
+.nav_middle_right input {
+    position: absolute;
+    /*文字输入框在搜索框的位置，用的绝对定位*/
+    left: 16px;
+    top: 2px;
+    width: 200px;
+    height: 20px;
+    border: none;
+    background-color: #FAFAFA;
+    /*输入框背景色*/
+    font-family: "MS Serif", "New York", serif;
+    /*输入框字体*/
+    font-size: 16px;
+}
+
+.nav_middle_right button {
+    position: absolute;
+    left: 220px;
+    top: 2px;
+    width: 27px;
+    height: 22px;
+    /*本来是23px，由于img margin设置了-1px 导致下方出现1px背景色，所以减了1px解决*/
+    border: none;
+    cursor: pointer;
+    /*鼠标经过时显示鼠标样式*/
+}
+
+.nav_middle_right img {
+    background: #FAFAFA no-repeat center top;
+    display: block;
+    margin-top: -1px;
+    /*出现的小瑕疵：图片顶端出现1px的背景色，用-1px 进行解决*/
+    border: none;
+    /*试过用button导入背景图片实现，但是作为背景的放大镜本身又有背景色，无法处理了*/
+}
+/******************************************* copyright *************************************/
+
+.copyright {
+    clear: both;
+    width: 100%;
+    height: 160px;
+    margin-top: 10px;
+    padding-top: 20px;
+    background: #e8e8e8;
+}
+
+.copyright>div {
+    width: 73.964497%;
+    margin: 0 auto;
+}
+
+.copyright>div>div {
+    float: left;
+    width: 20%;
+    background: url(../images/line.png) no-repeat right;
+}
+
+.copyright li {
+    font-size: 14px;
+    list-style: none;
+    width: 100%;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    color: #999;
+}
+
+
+.code{
+    text-align: center;
+   
+}
+
+.copyright h2 {
+    font-size: 16px;
+    color: #999;
+}
+
+
+
+.code>img {
+ 
+    margin-top: 2.5%;
+}

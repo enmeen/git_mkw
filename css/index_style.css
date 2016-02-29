@@ -1,0 +1,286 @@
+/* 该样式文件作为所有页面的基础样式，在大屏幕下应用 */
+
+
+/************************************************** main ****************************************/
+
+.main {
+    width: 74%;
+    margin-top: 5px;
+    height: 250px;
+    margin: 0 auto;
+}
+
+.main>div {
+    height: 250px;
+    border: 1px solid #e8e8e8;
+    overflow: hidden;
+}
+
+.main .news {
+    float: left;
+    width: 32%;
+}
+
+.main .products {
+    float: left;
+    width: 32%;
+    margin-left: 1.5%;
+    margin-right: 1.5%;
+    /* display:inline; */
+}
+
+.main .sidebar {
+    float: right;
+    width: 32%;
+}
+
+@media screen and (min-width:480px) and (max-width:555px) {
+    .main .sidebar {
+        display: none;
+    }
+    .main .products {
+        width: 49%;
+        margin: 0;
+    }
+    .main .products img {
+        display: none;
+    }
+    .main .news {
+        width: 49%;
+    }
+    .main .news img {
+        display: none;
+    }
+    .main .pic_news h2 {
+        color: red;
+        font-size: 1em;
+    }
+    .main .title span {
+        display: none;
+    }
+    .main .product_type .product_input {
+        
+        display: block;
+    }
+    .main .product_type .product_input select {
+        width: 150px;
+    }
+    .main .products .product_type li {
+        display: none;
+    }
+}
+
+@media screen and (min-width:555px) and (max-width:785px) {
+    .main .sidebar {
+        display: none;
+    }
+    .main .products {
+        width: 49%;
+        margin: 0;
+    }
+    .main .products img {
+        display: none;
+    }
+    .main .news {
+        width: 49%;
+    }
+    .main .news img {
+        display: none;
+    }
+    .main .pic_news h2 {
+        color: red;
+        font-size: 1.2em;
+    }
+    .main .product_type .product_input {    
+        display: none;
+    }
+}
+
+@media screen and (min-width:785px) and (max-width:1118px) {
+    .main .sidebar {
+        display: none;
+    }
+    .main .products {
+        width: 49.8%;
+        margin: 0;
+    }
+    .main .news {
+        width: 49.5%;
+    }
+    .main .pic_news h2 {
+        color: red;
+        font-size: 1.2em;
+    }
+    .main .product_type .product_input {    
+        display: none;
+    }
+}
+
+@media screen and (min-width:1118px)  {
+    .main .sidebar {
+        width: 30.9%;
+    }
+    .main .sidebar embed {
+        width: 100%;
+        height: 150px;
+    }
+    .main .pic_news h2 {
+        color: red;
+        font-size: 1.2em;
+    }
+    .main .product_type .product_input {    
+        display: none;
+    }
+}
+
+
+/* main中的标题，将运用到3个main的子盒子中 */
+
+.main .title {
+    border-bottom: 2px solid #e8e8e8;
+    height: 35px;
+    line-height: 2.916667em;
+    /* 35/12 */
+    color: #786f66;
+    font-family: "微软雅黑"
+}
+
+.main .title h2 {
+    width: 70%;
+    float: left;
+    padding-left: 10px;
+}
+
+.main .title span {
+    width: 20%;
+    float: right;
+    font-size: 1em;
+    font-family: "宋体";
+    text-align: right;
+    padding-right: 10px;
+}
+
+.main .title a:link,
+.main .title a:visited {
+    text-decoration: none;
+    color: gray;
+}
+
+.main .title a:hover,
+.main .title a:active {
+    color: red;
+}
+
+
+/* 图片新闻部分pic_news */
+
+.main .pic_news {
+    margin-top: 10px;
+    height: 80px;
+    line-height: 1.833333em;
+}
+
+.main .pic_news img {
+    float: left;
+    margin: 0 5px;
+}
+
+.main .pic_news p {
+    height: 100px;
+    margin: 5px;    
+}
+.products .pic_news p{
+    text-indent: 2em;
+}
+.main .pic_news a:link,
+.main .pic_news a:visited {
+    text-decoration: none;
+    color: red;
+}
+
+.main .products .pic_news {
+    height: 110px;
+}
+
+
+/* news_list */
+
+.main .news_list {
+    margin-top: 10px;
+}
+
+.main .news_list li {
+    list-style: none;
+    background: url(../images/list.jpg) no-repeat;
+    padding-left: 15px;
+    border-bottom: 1px dotted #e8e8e8;
+    width: 95%;
+    height: 25px;
+    line-height: 25px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.main .news_list span {
+    float: right;
+    color: gray;
+    font-size: 11px;
+}
+
+.main .news_list a {
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.main .news_list a:link,
+.main .news_list a:visited {
+    text-decoration: none;
+    color: #000;
+}
+
+.main .news_list a:hover,
+.main .news_list a:active {
+    color: red;
+}
+
+.main .products .product_type {
+    height: 45px;
+    margin-top: 50px;
+    padding-top: 10px;
+    width: 100%;
+    
+}
+
+.main .products .product_type li {
+    float: left;
+    text-decoration: none;
+    width: 24.9%;
+    text-align: center;
+    list-style: none;
+}
+
+.main .product_type a:link,
+.main .product_type a:visited {
+    text-decoration: none;
+    color: #000;
+}
+
+.main .product_type a:hover,
+.main .product_type a:active {
+    color: red;
+}
+
+
+/* aside区域 */
+
+.main .sidebar embed {
+    width: 100%;
+    height: 150px;
+}
+
+div.sidebar img {
+    max-width: 100%;
+}
